@@ -1,6 +1,6 @@
-// x and y for my charater
-var charaterX = 100;
-var charaterY = 100;
+// x and y for my character
+var characterX = 100;
+var characterY = 100;
 //define the key codes for each letter 
 var w = 87;
 var s = 83;
@@ -38,7 +38,7 @@ function draw()
     textSize(16);
     text("EXIT", width-50, height-50)
 
-    //createCharater(200,350);
+    //createCharacter(200,350);
     drawCharacter();
     // characterMovement();
 
@@ -87,12 +87,12 @@ if(characterX > width && character > width-50)
     circle(mouseShapeX, mouseShapeY, 25);
 }
 
-function chraacterMovement()
+function characterMovement()
     {
     // handle the keys
     if(keyIsDown(w))
     {
-    charaterY -=10;
+    characterY -=10;
     }
     if(keyIsDown(s))
     {
@@ -105,14 +105,14 @@ function chraacterMovement()
     }
     if(keyIsDown(d))
     {
-        charaterX +=10;
+        characterX +=10;
     }
 }
 function createCharacter(x,y)
 {
-    charaterX = x;
-    charaterY = y;
-    console.log(charaterX);
+    characterX = x;
+    characterY = y;
+    console.log(characterX);
     //character
 
     //circle(characterX, characterY,25);
@@ -121,7 +121,7 @@ function createCharacter(x,y)
 function drawCharacter()
 {
     fill(23,40,123);
-    circle(charaterX, charaterY,25);
+    circle(characterX, characterY,25);
 }
 function createBorders(thickness)
 {
